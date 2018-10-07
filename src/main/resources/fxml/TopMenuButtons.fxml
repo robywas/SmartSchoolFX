@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.myapp.SmartSchool.controllers.TopMenuButtonsController">
+   <children>
+      <ToggleButton mnemonicParsing="false" onAction="#openStudents" prefHeight="50.0" prefWidth="80.0" text="Uczniowie">
+         <toggleGroup>
+            <ToggleGroup fx:id="TopMenuButtons" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton mnemonicParsing="false" onAction="#openTeachers" prefHeight="50.0" prefWidth="80.0" text="Nauczyciele" toggleGroup="$TopMenuButtons" />
+      <ToggleButton mnemonicParsing="false" onAction="#openCourses" prefHeight="50.0" prefWidth="80.0" text="Kursy" toggleGroup="$TopMenuButtons" />
+      <ToggleButton mnemonicParsing="false" onAction="#openIncomes" prefHeight="50.0" prefWidth="80.0" text="Wpłaty" toggleGroup="$TopMenuButtons" />
+      <ToggleButton mnemonicParsing="false" onAction="#openStats" prefHeight="50.0" prefWidth="80.0" text="Statystyki" toggleGroup="$TopMenuButtons" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>
